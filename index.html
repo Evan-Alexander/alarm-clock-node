@@ -2,6 +2,8 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
     <script src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" "js/alarm-clock-interface.js">
     </script>
@@ -9,8 +11,15 @@
     <title>AlarmClock</title>
   </head>
   <body>
-    <h1>Here is the time</h1>
-    <p id="time"></p>
+    <div class="container">
+      <h1>Here is the time</h1>
+      <h1 id="time"></h1>
+      <form id="time-form" form-group>
+        <label for="time">What time do you want to wake up?</label>
+        <input id="time-input" type="time" name="time-input" class="form-control">
+        <button type="submit">Submit</button>
+      </form>
 
+    </div>
   </body>
 </html>
